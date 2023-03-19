@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One:wght@200;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+.nav-txt{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+
+  color: #B6D4EE;
+}
+.bold{
+  font-weight: 700;
+}
+
+.nav-txt:hover, .nav-txt:active,.nav-txt.active{
+  color: #FFFFFF;
+}
+
+.btn-cust{
+  background: #008EE0;
+  border-radius: 100px;
+}
+
+.backgrounds{
+  background: #004482;
+}
+
+
+.testx {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+
+
+.testx::after {
+  position: absolute;
+  bottom: 19px;
+  left: 4px;
+  content: '';
+  width: 95%;
+  height: 2px;
+  background: #FFFFFF;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+}
+.testx.active::after,.testx:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+.heightSpace50{
+  height: 50px;
+}
+
+.headTxt{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 120%;
+
+
+color: #FFFFFF;
+}
+
+.headMiniTxt{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 170%;
+
+
+color: #B6D4EE;
+}
+
+@media(max-width: 768px) {
+  button.btn-w-100 {
+      width: 100%;  
+  }
+}
